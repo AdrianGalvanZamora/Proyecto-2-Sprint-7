@@ -28,4 +28,3 @@ if build_scatter:
     st.write('Creando un gráfico de dispersión entre odómetro y precio')
     fig_scatter = px.scatter(car_data, x="odometer", y="price", title="Gráfico de Dispersión: Odómetro vs. Precio")
     st.plotly_chart(fig_scatter, use_container_width=True)
-
