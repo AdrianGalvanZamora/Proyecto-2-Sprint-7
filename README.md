@@ -24,3 +24,8 @@ El conjunto de datos utilizado es `vehicles_us.csv`.
 *   pandas
 *   plotly-express
 *   streamlit
+
+## Enlaces
+
+*   **Repositorio de GitHub:** [https://github.com/AdrianGalvanZamora/Proyecto-2-Sprint-7.git](https://github.com/AdrianGalvanZamora/Proyecto-2-Sprint-7.git)
+*   **Aplicación en Render:** [https://proyecto-2-sprint-7.onrender.com](https://proyecto-2-sprint-7.onrender.com)
