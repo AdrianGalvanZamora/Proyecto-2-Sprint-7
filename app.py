@@ -4,7 +4,7 @@ import streamlit as st
 
 try:
     
-    car_data = pd.read_csv('D:/Proyecto_2_Sprint_7/Proyecto-2-Sprint-7/data/vehicles_us.csv')
+    car_data = pd.read_csv('/Proyecto_2_Sprint_7/Proyecto-2-Sprint-7/data/vehicles_us.csv')
 except FileNotFoundError:
     st.error("Error: El archivo vehicles_us.csv no se encontró. Asegúrate de que esté en el directorio correcto.")
     st.stop()  # Detiene la ejecución de la app si no se encuentra el archivo
