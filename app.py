@@ -1,19 +1,20 @@
 import pandas as pd
 import plotly_express as px
 import streamlit as st
+import os
 
-try:
-    
-    car_data = pd.read_csv('/data/vehicles_us.csv')
-except FileNotFoundError:
-    st.error("Error: El archivo vehicles_us.csv no se encontró. Asegúrate de que esté en el directorio correcto.")
-    st.stop()  # Detiene la ejecución de la app si no se encuentra el archivo
-except pd.errors.ParserError:
-    st.error("Error: No se pudo analizar el archivo CSV. Verifica su formato.")
-    st.stop()
-except Exception as e:
-    st.error(f"Ocurrió un error inesperado: {e}")
-    st.stop()
+def cargar_datos():
+    ruta_archivo = os.path.join("data", "vehicles_us.csv")
+    try:
+        car_data = pd.read_csv(ruta_archivo)
+        return car_data
+    except FileNotFoundError:
+        print(f"Error: No se encontró el archivo en: {ruta_archivo}")
+        return None
+
+datos = cargar_datos()
+if datos is not None:
+    print(datos.head())
 
 st.header('Análisis Exploratorio de Datos de Anuncios de Coches')
 
