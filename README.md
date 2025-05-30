@@ -1,5 +1,3 @@
-# Proyecto-2-Sprint-7
-
 # Proyecto de Análisis Exploratorio de Datos de Anuncios de Coches
 
 Esta aplicación web, creada con Streamlit, permite realizar un análisis exploratorio básico del conjunto de datos de anuncios de coches (vehicles_us.csv).
